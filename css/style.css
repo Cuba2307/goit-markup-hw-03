@@ -8,16 +8,32 @@
     --background-color-section: #ECECEC;
     --background-color-list: #F5F4FA;
 }
+html{
+    box-sizing: border-box;
+}
 body{
     font-family: 'Roboto', sans-serif;
     color:#ffffff;
     background-color: #ffffff;
     font-style: normal;
     letter-spacing: 0.03em;
+    margin: 0 ,auto;
+}
+ul{
+    padding-inline-start: 0;
+}
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 /* Header content */
 .header-content{
     letter-spacing: 0.02em;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .list{
     list-style: none;
@@ -28,6 +44,20 @@ body{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
+}
+.header-content .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav{
+    display: inline-flex;
+}
+.site-nav{
+    display: inline-flex;
+}
+.aut-site{
+    display: inline-flex;
 }
 .site-nav .link{
     font-weight: 500;
